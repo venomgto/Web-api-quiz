@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <button id="view_highscore">View high score</button>
+        </div>
+        <div>
+            <h2 id="timer">Time:</h2>
+        </div>
+    </header>
+
+    <main>
+        <section id="preamble">
+            <h1>Pop Quiz</h1>
+            <div>
+                <p>Try to answer the following code-related questions within the time limit</p>
+                <p>Keep in mind the incorrect answers will penalize your score/time by 10 seconds</p>
+            </div>
+            <button id="start">Start Quiz</button>
+            <div id="results"></div>
+        </section>
+
+        <section id="questdiv" class="hidden">
+            <p id="questiontext">text</p>
+            <button id="choice_a">text</button>
+            <button id="choice_b">text</button>
+            <button id="choice_c">text</button>
+            <p id="correctness_indicator" class="hidden"></p>
+        </section>
+
+        <section id="initials_prompt" class="hidden">
+            <h2>All done!</h2>
+            <p>Your final score is <span id="final_score">??</span>.</p>
+            <input type="text" placeholder="Enter initials" id="initials_field">
+            <button id="submit_initials">Submit</button>
+        </section>
+
+        <section id="highscores_section" class="hidden">
+            <h2>Highscores</h2>
+            <ul id="highscore_list">
+                <!-- <li>MM: 40</li>
+                <li>VP: 27</li>
+                <li>AA: 6</li> -->
+            </ul>
+            <button id="go_back_button">Go back</button>
+            <button id="clear_highscores_button">Clear Highscores</button>
+        </section>
+
+    </main>
+    <script src="./Assets/script.js"></script>
+</body>
+
+</html>

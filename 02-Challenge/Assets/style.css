@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #06AED5; /* Change header background color */
+    padding: 10px 20px;
+}
+
+header button {
+    background-color: #ffffff; /* Change button background color */
+    color: #06AED5; /* Change button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #06AED5; /* Change button background color on hover */
+    color: #ffffff; /* Change button text color on hover */
+}
+
+h1, p, button {
+    align-items: center;
+    text-align: center; /* Center-align headings, paragraphs, and buttons */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Style for the quiz questions */
+#questdiv p {
+    font-size: 24px; /* Increase the font size for questions */
+    margin-bottom: 20px; /* Add spacing between questions */
+}
+
+/* Style for answer buttons */
+#questdiv button {
+    background-color: #ffffff; /* Change answer button background color */
+    color: #000000; /* Change answer button text color */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#questdiv button:hover {
+    background-color: #06AED5; /* Change answer button background color on hover */
+    color: #ffffff; /* Change answer button text color on hover */
+}
+
+/* Style for correctness indicator (green checkmark or red "x") */
+#correctness_indicator {
+    font-size: 48px; /* Increase the font size for the indicator */
+    margin-top: 20px; /* Add spacing between indicator and answer buttons */
+    text-align: center;
+}
+
+/* Style for initials section */
+#initials_prompt input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#initials_prompt button {
+    background-color: #06AED5; /* Change submit button background color */
+    color: #ffffff; /* Change submit button text color */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#initials_prompt button:hover {
+    background-color: #ffffff; /* Change submit button background color on hover */
+    color: #06AED5; /* Change submit button text color on hover */
+}
+
+/* Style for highscores section */
+#highscores_section ul {
+    list-style: none;
+    padding: 0;
+}
+
+#highscores_section li {
+    font-size: 24px; /* Increase the font size for highscore entries */
+    margin-bottom: 10px; /* Add spacing between highscore entries */
+}
+
+/* Style for go back and clear highscores buttons */
+#go_back_button, #clear_highscores_button {
+    background-color: #06AED5; /* Change button background color */
+    color: #ffffff; /* Change button text color */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#go_back_button:hover, #clear_highscores_button:hover {
+    background-color: #ffffff; /* Change button background color on hover */
+    color: #06AED5; /* Change button text color on hover */
+}
